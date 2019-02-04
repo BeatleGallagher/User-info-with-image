@@ -1,0 +1,99 @@
+.grid-container{
+    display:grid;
+    grid-template-columns:30% auto; 
+    margin:0.5%;
+    grid-column-gap:10px; 
+}
+
+/* QUERY FOR TABLET */
+@media only screen and (max-width:768px){ 
+    .grid-container{
+        display:grid;
+        grid-template-columns: 100%;       
+    }
+    #root,input::placeholder{
+        text-align: center;
+    }
+    i{
+       font-size: 70%;
+    }
+    #FormControlFile{
+        padding: 0 30% 0 40%;
+    }
+    #displayBtn{
+        margin: 0 45%;
+    }
+    #output{
+        margin-top:2%;
+    }
+}
+
+/*  QUERY FOR IPHONE 6/7/8/X/XS */
+@media only screen and (max-width:375px){
+    #displayBtn{
+        margin: 0 40%;
+    }
+    i{
+        font-size: 70%;
+        width: 20% !important; 
+    }
+    img{
+       
+        width:335px;
+        height: 280px;    
+    }
+    table tr td{
+        float:left;
+    }
+    table tr th{
+        display:none;
+    }
+}
+@media only screen and (max-width:320px){
+    input#displayBtn{
+        display:block;
+        margin:0 auto;
+
+    }
+    i{
+        font-size: 70%;
+        width: 20% !important; 
+    }
+    img{
+       
+        width:335px;
+        height: 280px;    
+    }
+    table tr td{
+        float:left;
+    }
+    table tr th{
+        display:none;
+    }
+}
+
+/* QUERY FOR IPHONE 6/7/8 PLUS */
+@media only screen and (max-width:414px){
+    #displayBtn{
+        margin: 0 40.55%;
+    }
+    i{
+        font-size: 80%;
+    }
+    img{
+       
+        width:380px;
+        height: 280px;    
+    }
+    th{
+      
+       font-size:60%;
+    }
+    table tr td{
+
+        float:left;
+    }
+    table tr th{
+        float:left;
+    }
+}
